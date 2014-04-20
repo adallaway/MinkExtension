@@ -306,8 +306,8 @@ class Extension implements ExtensionInterface
                                 scalarNode('max-duration')->
                                     defaultValue(isset($config['selenium2']['capabilities']['max-duration']) ? $config['selenium2']['capabilities']['max-duration'] : '300')->
                                 end()->
-                                scalarNode('applicationVersion')->
-                                    defaultValue(isset($config['selenium2']['capabilities']['applicationVersion']) ? $config['selenium2']['capabilities']['applicationVersion'] : "")->
+                                scalarNode('applicationName')->
+                                    defaultValue(isset($config['selenium2']['capabilities']['applicationName']) ? $config['selenium2']['capabilities']['applicationName'] : "")->
                                 end()->
                                 booleanNode('javascriptEnabled')->end()->
                                 booleanNode('databaseEnabled')->end()->
